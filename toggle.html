@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Boilerplate Code</title>
+		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	</head>
+	<body>
+
+		<p>This text will do <strong>magic</strong> once you click the button.</p>
+		<button id="toggle">Magic!</button>
+
+		<script type="text/javascript">
+
+			$("#toggle").click(function() {
+				$("p").toggle();
+
+					if ($("p").css("display") == "block") {
+						$("button").html("Hide text!");
+					} else {
+						$("button").html("Show text!");
+					}
+				});
+
+		</script>
+
+
+	</body>
+</html>
